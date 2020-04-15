@@ -1,6 +1,6 @@
-class Cli
+class MissingPersons::Cli
     
     def start
-        puts "hello Dom"
+        puts "Welcome to Missing Person, please press 'Enter' to begein."
     end
 end

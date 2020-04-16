@@ -25,7 +25,6 @@ class MissingPersons::Cli
             display_person(input)
         end
     end
-
     def display_person(input)
         pers = MissingPersons::Person.all[input]
         puts pers
@@ -64,6 +63,7 @@ class MissingPersons::Cli
         puts "Please choose a number to view more information about a person. Type 'exit' to exit program."
     end
 
+    
 
 end
 

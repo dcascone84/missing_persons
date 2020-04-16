@@ -1,4 +1,4 @@
-
+require_relative "./environment"
 
 class MissingPersons::Person
     
@@ -20,6 +20,10 @@ class MissingPersons::Person
         @name = name
         @url = url
         save
+    end
+
+    def to_s
+        name.upcase
     end
 
     def save

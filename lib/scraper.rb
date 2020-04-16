@@ -9,19 +9,18 @@ class MissingPersons::Scraper
     doc = Nokogiri::HTML(open(site))
     names = doc.css("ul.full-grid.wanted-grid-natural.infinity.castle-grid-block-xs-2.castle-grid-block-sm-2castle-grid-block-md-3.castle-grid-block-lg-5.dt-grid li")
     
-    individual_array = []
+    p_array = []
 
         names.each do |name|
-        individual_hash = {
+        p_hash = {
 
             name: name.css("h3").text.strip,
             url: name.css("a").attr("href").value
         }
 
-        individual_array << individual_hash
+        p_array << p_hash
         end
-        individual_array
-    MissingPersons::Person.mass_create_from_scraper(individual_array)
+        MissingPersons::Person.mass_create_from_scraper(p_array)
     end
 
 end

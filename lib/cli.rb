@@ -22,15 +22,15 @@ class MissingPersons::Cli
     def loop_choice #loops valid / invalid choices / invokes #menu, get_person, display_person(input) / breaks loop (exit)
         loop do
             menu
-            input = get_person
+            input = get_user_input
             break if input == "exit"
             next if input == "invalid"
             display_person(input)
         end
     end
 
-    def get_person #gets user input and with it app decide how to respond
-        input = gets.strip
+    def get_user_input #gets user input and with it app decide how to respond
+        input = gets.downcase.strip
         return input if input == "exit"
         if !valid?(input)
             puts "Not a valid choice. Please choose again." 

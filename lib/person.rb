@@ -14,11 +14,12 @@ class MissingPersons::Person
         end
     end
 
-    attr_accessor :name, :url
+    attr_accessor :name, :url, :description
 
     def initialize(name, url)
         @name = name
         @url = url
+        @description = nil
         save
     end
 
@@ -28,5 +29,9 @@ class MissingPersons::Person
 
     def save
         @@all << self
+    end
+
+    def full?
+        !!@description
     end
 end

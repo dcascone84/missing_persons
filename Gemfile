@@ -9,3 +9,5 @@ gem "nokogiri", "~> 1.10"
 
 gem "pry", "~> 0.13.1"
 
+gem "httparty"
+gem "gem", "~> 0.0.1.alpha"

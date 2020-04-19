@@ -14,7 +14,7 @@ class MissingPersons::Person
         end
     end
 
-    attr_accessor :name, :url, :description
+    attr_accessor :name, :url
 
     def initialize(name, url)
         @name = name
@@ -31,7 +31,4 @@ class MissingPersons::Person
         @@all << self
     end
 
-    def full?
-        !!@description
-    end
 end

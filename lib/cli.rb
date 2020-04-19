@@ -61,12 +61,11 @@ class MissingPersons::Cli
         puts "\n\n\n\n\n\n"
         puts person.name
         puts person.url
-        MissingPersons::Scraper.get_more_info(person) if !person.full?
+        MissingPersons::Scraper.get_more_info(person) 
         puts "\n" 
         puts "To continue press 'enter'."
         gets
     end
-
     def valid?(input)
         input.to_i.between?(1, MissingPersons::Person.all.length)
     end

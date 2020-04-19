@@ -66,6 +66,7 @@ class MissingPersons::Cli
         puts "To continue press 'enter'."
         gets
     end
+    
     def valid?(input)
         input.to_i.between?(1, MissingPersons::Person.all.length)
     end

@@ -1,8 +1,6 @@
 # MissingPersons
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/missing_persons`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to Missing Persons. This app is designed to make it easy to search through the FBI missing persons database. Missing Persons will not show you a picture of an individual but will give you the person's url information where you can get further details, including their picture. This app will also allow you to see all the people in the FBI database by simply scrolling down the list of names.
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Run the app by typing `bin/run_missing_persons` in terminal. The app will have a welcome message. It will then display a list of names, to make a selection choose the number prior to a person’s name. This will give you more details about the person. 
 
 ## Development
 

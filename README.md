@@ -4,7 +4,7 @@ Welcome to Missing Persons. This app is designed to make it easy to search throu
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your terminal:
 
 ```ruby
 bin/run_missing_persons

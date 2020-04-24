@@ -7,16 +7,8 @@ Welcome to Missing Persons. This app is designed to make it easy to search throu
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'missing_persons'
+bin/run_missing_persons
 ```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install missing_persons
 
 ## Usage
 

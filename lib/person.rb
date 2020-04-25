@@ -13,14 +13,15 @@ class MissingPersons::Person
             new(person_hash[:name], person_hash[:url])
         end
     end
-
-    def self.sort_by_name
-        MissingPersons::Cli.new.get_persons_info
-        all_persons = self.all
-        all_persons.sort do |a, b|
-          a.name <=> b.name
-        end
-    end
+    
+    # added for review
+    # def self.sort_by_name
+    #     MissingPersons::Cli.new.get_persons_info
+    #     all_persons = self.all
+    #     all_persons.sort do |a, b|
+    #       a.name <=> b.name
+    #     end
+    # end
 
     attr_accessor :name, :url
 

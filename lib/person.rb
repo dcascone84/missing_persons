@@ -14,12 +14,21 @@ class MissingPersons::Person
         end
     end
 
+    def self.sort_by_name
+        MissingPersons::Cli.new.get_persons_info
+        all_persons = self.all
+        all_persons.sort do |a, b|
+          a.name <=> b.name
+        end
+    end
+
     attr_accessor :name, :url
+
+    
 
     def initialize(name, url)
         @name = name
         @url = url
-        @description = nil
         save
     end
 

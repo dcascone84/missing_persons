@@ -73,4 +73,3 @@ class MissingPersons::Cli
 
 end
 
-MissingPersons::Cli

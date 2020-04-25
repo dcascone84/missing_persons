@@ -10,7 +10,6 @@ Add this line to your terminal:
 bin/run_missing_persons
 ```
 
-
 ## Usage
 
 Run the app by typing `bin/run_missing_persons` in terminal. The app will have a welcome message. It will then display a list of names, to make a selection choose the number prior to a person’s name. This will give you more details about the person. 
